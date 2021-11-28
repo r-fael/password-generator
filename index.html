@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="icon" href="./key.svg" />
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="background" onclick="closeModal()" class="background hide"></div>
+
+      <div class="card">
+        <div id="container" class="container">
+          <h1 class="title">Gerador de senha</h1>
+          <div id="input">
+            <input type="number" id="size" min="0" max="15" placeholder="000" />
+            <button onclick="generatePass()">Gerar senha</button>
+          </div>
+
+          <div id="result" class="hide">
+            <textarea id="password" readonly></textarea>
+            <button onclick="copy()" id="button">Copiar</button>
+          </div>
+        </div>
+
+        <div id="modal" class="modal hide">
+          <h1 id="modalText">Lorem ipsum dolor</h1>
+          <button onclick="closeModal()">OK</button>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
